@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CowModule } from 'src/cow/cow.module';
 
 import { AppComponent } from './app.component';
-import { PigModule } from './pig/pig.module';
+import { BarchartComponent } from './barchart/barchart.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [	
+    AppComponent,
+      BarchartComponent
+   ],
   imports: [
-    BrowserModule,
-    CowModule,
-    PigModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
